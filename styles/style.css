@@ -1,0 +1,56 @@
+@import url(root.css);
+@import url(media.query.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    padding: 1rem;
+}
+
+#logo:hover{
+    cursor: pointer;
+}
+
+nav{
+    padding: 1rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+#navegacao-itens li:hover{
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div{
+    padding: 1rem;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <title>Biblioteca | LIVROS</title>
+</head>
+<body>
+    <main>
+        <input type="text" id="searchInput" placeholder="Buscar por título, autor...">
+        <button onclick="buscaLivros()">Buscar</button>
+
+        <select id="filtroCategoria">
+        <option value="">Todas as Categorias</option>
+        <option value="Fiction">Ficção</option>
+        <option value="Science">Ciência</option>
+        <!-- Adicione mais categorias -->
+        </select>
+
+        <div id="resultadoLivros">
+            <!--"section" inserida no javascript-->
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
