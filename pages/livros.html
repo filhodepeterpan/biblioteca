@@ -7,21 +7,111 @@
     <title>Biblioteca | LIVROS</title>
 </head>
 <body>
+    <header>
+        <div id="logo">
+            <h1 id="logo-nome" onclick="window.location.href='../index.html'">Biblioteca</h1>
+        </div>
+        <nav>
+            <ul id="navegacao-itens">
+                <li><a href="livros.html">LIVROS</a></li>
+                <li><a href="https://github.com/filhodepeterpan/biblioteca" target="_blank">GITHUB</a></li>
+            </ul>
+        </nav> 
+    </header>
+
     <main>
-        <input type="text" id="searchInput" placeholder="Buscar por título, autor...">
-        <button onclick="buscaLivros()">Buscar</button>
+        <div id="secao-livros">
+            <input type="text" id="inputBusca" placeholder="Buscar por título, autor...">
+            <button id="buscar" onclick="buscaLivros()">Buscar</button>
 
-        <select id="filtroCategoria">
-        <option value="">Todas as Categorias</option>
-        <option value="Fiction">Ficção</option>
-        <option value="Science">Ciência</option>
-        <!-- Adicione mais categorias -->
-        </select>
-
-        <div id="resultadoLivros">
-            <!--"section" inserida no javascript-->
+            <select id="filtroCategoria">
+                <option value="">Todas as Categorias</option>
+                <option value="Fiction">Ficção</option>
+                <option value="Nonfiction">Não Ficção</option>
+                <option value="Science">Ciência</option>
+                <option value="Mathematics">Matemática</option>
+                <option value="History">História</option>
+                <option value="Biography & Autobiography">Biografia & Autobiografia</option>
+                <option value="Computers">Computação</option>
+                <option value="Art">Arte</option>
+                <option value="Philosophy">Filosofia</option>
+                <option value="Religion">Religião</option>
+                <option value="Psychology">Psicologia</option>
+                <option value="Education">Educação</option>
+                <option value="Health & Fitness">Saúde e Fitness</option>
+                <option value="Cooking">Culinária</option>
+                <option value="Travel">Viagem</option>
+                <option value="Law">Direito</option>
+                <option value="Business & Economics">Negócios e Economia</option>
+                <option value="Political Science">Ciência Política</option>
+                <option value="Juvenile Fiction">Ficção Juvenil</option>
+                <option value="Juvenile Nonfiction">Não Ficção Juvenil</option>
+                <option value="Comics & Graphic Novels">Quadrinhos e Novelas Gráficas</option>
+                <option value="Drama">Drama</option>
+                <option value="Poetry">Poesia</option>
+                <option value="Music">Música</option>
+                <option value="Sports & Recreation">Esportes e Recreação</option>
+                <option value="Self-Help">Autoajuda</option>
+                <option value="Language">Linguagem</option>
+                <option value="Science Fiction">Ficção Científica</option>
+                <option value="Fantasy">Fantasia</option>
+                <option value="Mystery">Mistério</option>
+                <option value="Horror">Terror</option>
+                <option value="Romance">Romance</option>
+                <option value="Adventure">Aventura</option>
+                <option value="Humor">Humor</option>
+            </select>              
+         
+            <h2 id="nome-da-categoria"></h2>
+            <div id="resultadoLivros">
+                <!--"section" inserida no javascript-->
+            </div>
         </div>
     </main>
+
+    <footer>
+        <div id="creditos-estudantes">
+            <b>ALUNOS</b>
+            <section>
+                <p>André Santos</p>
+                <p>Douglas Soares</p>
+                <p>Daiane Vitelbo</p>
+                <p>Gustavo Friedrich</p>
+                <p>Jhonatan Emanoel</p>
+                <p>Jhonny Alexandre</p>
+                <p>João Matheus</p>
+                <p>Laura Bueno</p>
+                <p>Marcelo Nascimento</p>
+                <p>Pedro Henrique</p>
+                <p>Vinícius Souza</p>
+            </section>
+        </div>
+
+        <div id="creditos-professor">
+            <b>PROFESSOR</b>
+            <section>
+                <p>Daniel da Silva Lopes de Freitas</p>
+            </section>
+            <b>COMPONENTE</b>
+            <section>
+                <p>UDIAD - </p>
+            </section>
+        </div>
+
+        <div id="creditos-institucional">
+            <b>INSTITUIÇÃO</b>
+            <section>
+                <p>ETEC de Praia Grande - Extensão Balneário Maracanã</p>
+            </section>
+            <b>CURSO</b>
+            <section>
+                <p>Técnico em Informática para a Internet</p>
+                <p>3º Módulo</p>
+                <p>2025</p>
+            </section>
+        </div>
+    </footer>
+
     <script src="../scripts/script.js"></script>
 </body>
 </html>

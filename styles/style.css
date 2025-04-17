@@ -46,6 +46,37 @@ nav ul{
     cursor: pointer;
 }
 
+main{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#nome-da-categoria{
+    padding: 2rem 0 1rem 0;
+}
+
+#resultadoLivros{
+    padding: 2rem 5rem 0 5rem;
+    display: flex;
+    gap: 5rem;
+    overflow-x: scroll;
+}
+
+#resultadoLivros section{
+    display: flex;
+    padding: 2rem 0;
+    gap: 1rem;
+    align-items: center;
+}
+
+#livro-capa{
+    height: 200px;
+}
+
+#livro-info{
+    width: 300px;
+}
+
 footer{
     display: flex;
     justify-content: space-between;
