@@ -62,12 +62,53 @@ nav{
 
 main{
     padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+#secao-principal{
+    position: relative;
+    display: block;
+}
+
+#secao-principal-texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+#secao-principal-texto-titulo{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+#secao-principal-texto-conteudo{
+    font-size: 1.3rem;
+}
+
+#secao-principal-img{
+    display: block;
+    height: 100vh;
+    width: 100%;
+}
+
+#secao-livros{
     text-align: center;
 }
 
 #nome-da-categoria{
     padding: 2rem 0 1rem 0;
 }
+
 
 input{
     padding: var(--padding-busca);
