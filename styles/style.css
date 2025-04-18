@@ -12,38 +12,52 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor-bg-main);
 }
 
 a{
     text-decoration: none;
+    color: var(--cor-nav);
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--cor-bg-header);
 }
 
 #logo{
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 #logo:hover{
     cursor: pointer;
 }
 
-nav{
-    padding: 1rem;
+#logo-nome{
+    font-family: var(--fonte-destaque);
+    color: var(--cor-logo);
 }
 
-nav ul{
+nav{
+    padding: 1rem 2rem;
+}
+
+#navegacao-itens{
     list-style: none;
     display: flex;
     gap: 1rem;
 }
 
+#navegacao-itens li{
+    color: var(--cor-nav);
+}
+
 #navegacao-itens li:hover{
     cursor: pointer;
+    border-bottom: 1px solid #FFFFFF;
 }
 
 main{
@@ -55,11 +69,32 @@ main{
     padding: 2rem 0 1rem 0;
 }
 
+input{
+    padding: var(--padding-busca);
+}
+
+select{
+    padding: var(--padding-busca);
+    text-align: center;
+}
+
+#buscar{
+    padding: var(--padding-busca);
+    background-color: var(--cor-bg-footer);
+    color: var(--cor-nav);
+}
+
 #resultadoLivros{
-    padding: 2rem 5rem 0 5rem;
+    margin: 2rem 6rem;
     display: flex;
     gap: 5rem;
     overflow-x: scroll;
+}
+
+#mensagem-erro{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
 }
 
 #resultadoLivros section{
@@ -80,8 +115,13 @@ main{
 footer{
     display: flex;
     justify-content: space-between;
+    background-color: var(--cor-bg-footer);
+    color: var(--cor-nav);
 }
 
 footer div{
-    padding: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }

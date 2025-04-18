@@ -11,6 +11,7 @@ function buscaLivros() {
     const termo = document.getElementById("inputBusca").value;
     const categoria = document.getElementById("filtroCategoria").value;
     const nomeDaCategoria = document.getElementById("nome-da-categoria");
+    const container = document.getElementById("resultadoLivros");
 
     let url = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(termo)}`;
   
@@ -23,11 +24,10 @@ function buscaLivros() {
     fetch(url)
       .then(res => res.json())
       .then(data => {
-        const container = document.getElementById("resultadoLivros");
         container.innerHTML = "";
   
         if (!data.items) {
-          container.innerHTML = "<p>Não possuímos este livro disponível.</p>";
+          container.innerHTML = "<p id='mensagem-erro'>Não possuímos este livro disponível.</p>";
           return;
         }
   
